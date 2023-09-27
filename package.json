@@ -1,0 +1,25 @@
+{
+  "name": "dep",
+  "version": "1.0.0",
+  "description": "static dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "newinstall": "yarn install --modules-folder ./static/node_modules/"
+  },
+  "keywords": [
+    "bootstrap",
+    "jquery",
+    "popper.js"
+  ],
+  "author": "roza",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3",
+    "bootswatch": "^5.1.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}

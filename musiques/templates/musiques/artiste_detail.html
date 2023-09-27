@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+           <h2>Détail de l'artiste  {{object.pk}}</h2>
+{% endblock %}
+{% block content %}
+<ul>
+    <li>{{object.nom}}</li>
+    <li>Nombre de morceaux : {{object.nombre_morceaux}}</li>
+    
+</ul>
+    <a href="{% url 'musiques:artiste_list' %}">
+        Revenir a la liste
+    </a>
+
+{% endblock %}

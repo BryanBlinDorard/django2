@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block header %}
+           <h2>Informations sur le Morceau n°{{object.pk}}</h2>
+{% endblock %}
+{% block content %}
+<h5>Titre : {{object.titre}}</h5>
+<h5>Interprète : {{object.interprete.nom}}</h5>
+<!-- si object.date_sortie donne None il affiche non renseigné -->
+<h5>Date de sortie : {{object.date_sortie|default:"non renseigné"}}</h5>
+<a href="{% url 'musiques:morceau_list' %}">
+    Revenir a la liste
+</a>
+
+{% endblock %}
